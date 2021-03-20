@@ -1,3 +1,9 @@
+/* 
+  Set objects are collections of values. 
+  You can iterate through the elements of a set in insertion order. 
+  A value in the Set may only occur once; it is unique in the Set's collection.
+*/
+
 const customSet = function() {
   let collection = [];
 
@@ -30,6 +36,8 @@ const customSet = function() {
   this.size = function() {
     return collection.length;
   };
+
+  /* Default JS Set does not have these functions declared below */
 
   this.union = function(otherSet) {
     var unionSet = new customSet();
